@@ -16,11 +16,15 @@ sed -i 's/192.168.1.1/192.168.10.12/g' package/base-files/luci/bin/config_genera
 sed -i 's/192.168.1.1/192.168.10.12/g' package/base-files/files/bin/config_generate
 
 # 移除要替换的包
+rm -rf feeds/luci/themes/luci-theme-argon
+rm -rf feeds/luci/applications/luci-app-argon-config
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/luci-app-passwall2
 rm -rf feeds/luci/applications/luci-app-openclash
 rm -rf feeds/luci/applications/luci-app-lucky
-rm -rf feeds/luci/themes/luci-theme-argon
+rm -rf feeds/luci/applications/luci-app-wol
+rm -rf feeds/luci/applications/luci-app-vlmcsd
+rm -rf feeds/luci/applications/luci-app-accesscontrol
 rm -rf feeds/packages/net/chinadns-ng
 rm -rf feeds/packages/net/geoview
 rm -rf feeds/packages/net/sing-box
