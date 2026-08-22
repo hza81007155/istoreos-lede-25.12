@@ -34,6 +34,10 @@ rm -rf feeds/packages/utils/coremark
 # 设置默认主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-light/Makefile
 
+# argon 主题
+git clone --depth=1 -b master https://github.com/hza81007155/luci-theme-argon package/luci-theme-argon
+git clone --depth=1 -b master https://github.com/hza81007155/luci-app-argon-config package/luci-app-argon-config
+
 # x86 型号只显示 CPU 型号
 sed -i 's/${g}.*/${a}${b}${c}${d}${e}${f}${hydrid}/g' package/lean/autocore/files/x86/autocore
 
