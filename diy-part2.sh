@@ -60,6 +60,7 @@ function git_sparse_clone() {
 git_sparse_clone openwrt-24.10 https://github.com/openwrt/packages utils/coremark
 git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash package/luci-app-openclash
+git clone --depth=1 -b master https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
 git clone --depth=1 -b main https://github.com/Openwrt-Passwall/openwrt-passwall package/luci-app-passwall
 git clone --depth=1 -b main https://github.com/Openwrt-Passwall/openwrt-passwall2 package/openwrt-passwall2
