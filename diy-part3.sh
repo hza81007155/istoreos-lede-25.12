@@ -21,7 +21,6 @@ rm -rf feeds/luci/applications/luci-app-argon-config
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/luci-app-passwall2
 rm -rf feeds/luci/applications/luci-app-openclash
-rm -rf feeds/luci/applications/luci-app-smartdns
 rm -rf feeds/luci/applications/luci-app-lucky
 rm -rf feeds/luci/applications/luci-app-wol
 rm -rf feeds/luci/applications/luci-app-vlmcsd
@@ -62,10 +61,6 @@ git_sparse_clone openwrt-24.10 https://github.com/openwrt/packages utils/coremar
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
-# SmartDNS
-git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
-git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
-
 # argon 主题
 git clone --depth=1 -b 18.06 https://github.com/hza81007155/luci-theme-argon package/luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/hza81007155/luci-app-argon-config package/luci-app-argon-config
@@ -74,9 +69,6 @@ git clone --depth=1 -b 18.06 https://github.com/hza81007155/luci-app-argon-confi
 git clone --depth=1 --single-branch https://github.com/hza81007155/luci-app-cpufreq.git
 
 # istore
-#git clone --depth=1 -b main https://github.com/linkease/nas-packages-luci package/nas-packages-luci
-#git clone --depth=1 -b master https://github.com/linkease/nas-packages package/nas-packages
-#git clone --depth=1 -b main https://github.com/linkease/istore package/istore
 git clone https://github.com/linkease/istore-ui.git package/istore/istore-ui
 git clone https://github.com/linkease/istore.git package/istore/istore
 git clone https://github.com/linkease/nas-packages.git package/nas
